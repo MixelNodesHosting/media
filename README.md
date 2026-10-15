@@ -4,16 +4,16 @@ Vídeos y archivos pesados de [mixelnodes.com](https://mixelnodes.com). No se de
 la web los enlaza a través de la CDN gratuita de jsDelivr, solo cuando alguien pulsa reproducir.
 
 ```
-https://cdn.jsdelivr.net/gh/MixelNodesHosting/media@v1/videos/mixelshield-1080p.mp4
-https://cdn.jsdelivr.net/gh/MixelNodesHosting/media@v1/videos/mixelshield-720p.mp4
-https://cdn.jsdelivr.net/gh/MixelNodesHosting/media@v1/videos/mixelai-1080p.mp4
-https://cdn.jsdelivr.net/gh/MixelNodesHosting/media@v1/videos/mixelai-720p.mp4
+https://cdn.jsdelivr.net/gh/MixelNodesHosting/media@a28aa3316b0785fca00f4559603e8ae86a32a357/videos/mixelshield-1080p.mp4
+https://cdn.jsdelivr.net/gh/MixelNodesHosting/media@a28aa3316b0785fca00f4559603e8ae86a32a357/videos/mixelshield-720p.mp4
+https://cdn.jsdelivr.net/gh/MixelNodesHosting/media@a28aa3316b0785fca00f4559603e8ae86a32a357/videos/mixelai-1080p.mp4
+https://cdn.jsdelivr.net/gh/MixelNodesHosting/media@a28aa3316b0785fca00f4559603e8ae86a32a357/videos/mixelai-720p.mp4
 ```
 
 - El repo tiene que ser **público** (jsDelivr no sirve repos privados).
 - jsDelivr no sirve archivos de más de 20 MB: recomprime antes de subir (ver abajo).
-- La web apunta al tag `v1`. Para cambiar un vídeo sin romper cachés: súbelo, crea el tag `v2`
-  y cambia `@v1` por `@v2` en `src/config/media.js` de la web (o en la variable `VITE_MEDIA_BASE_URL`).
+- La web apunta a un commit concreto de este repo. Para cambiar un vídeo sin romper cachés: súbelo y copia el hash del nuevo commit (o crea un tag)
+  y pon ese hash en lugar del actual en `src/config/media.js` de la web (o en la variable `VITE_MEDIA_BASE_URL`).
 
 ## Cómo se recomprimen
 
